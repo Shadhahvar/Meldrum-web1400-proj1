@@ -1,0 +1,14 @@
+WORK JOURNAL
+2/19
+got the wireframe down very fast, but I need to explain what this is. I wanted to do something with beautiful mecha art, so i have here an imaginary traveling museum called Mobile Suite. The website for this madeup traveling gallery shows that it hosts exclusively mecha art and all the pertaining showcases they currently have going on. This is a lot less stressful because I get to put down on paper what is in my head instead of instructions on a page
+2/21
+Spent way too long again, but THIS TIME it was not because I was being perfectionistic or struggling with a CSS concept, it was because I was having fun. I don't need to remember verbatim the CSS code to target things or what the syntax is on the styling, I just need to remember what we've done and what's possible, and google web searches can do the rest.
+REFLECTION ANSWERS
+
+1.	What I did: agaim spent too long, but that was only after a relatively quick buildout of the bones of the thing. I spent to long having fun creating ridiculous content and then writing the HTML and CSS to house it in.
+2.	What worked well: Just going for it. The wireframe did most of the work this time, I was even able to make one wireframe for all pages just by showing which parts get changed/cancelled-out with crossing out those parts. Still, a LOT of mid build pivoting was necessary.
+3.	What was tricky: Getting bullet points to not sit on the left while the line items themselves were centered.
+4.	Key insight: Don't worry about CSS until AFTER all the HTML is in place
+5.	Next steps: redo it perfect for personal satisfaction and individual keks.
+6.	Work Quality: This one is portfolio ready after I check to see if i need to sanitize the content
+NOTE: TONS of AI content gen, but the images are all real and by Yoshiyuki Takani

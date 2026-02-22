@@ -1,0 +1,106 @@
+CSS=========================================================================
+
+:root {
+    --color-01: #233; /*primary*/
+    --color-02: #8cc; /*accent*/
+    --color-03: #fff; /*background*/
+    --color-04: #000; /*text color*/
+    --color-05: #8cc5;
+    --color-06: #ffc800; /*cancellation color*/
+
+      /* psuedo selectors for mouse behavior*/
+  --current: #ddd;
+  --link: #999;
+  --visited: #a8a;
+  --hover: #fd7;
+  --active: #ffa;
+
+    /* Spacing - build a scale using multiples */
+  --space-sm: 0.8rem;/* smallest gap */
+  --space-md: 1.3rem;/* comfortable default */
+  --space-lg: 2.1rem;/* section breaks */
+  --space-xl: 3.4rem;/* major separations */
+  --space-xxl: 5.5rem;/* i can't believe you've done this */
+  --space-borders: 0.2rem;
+ } 
+
+ #current:hover {
+    background-color: var(--hover);
+}
+
+a:visited {
+    background-color: var(--visited);
+    color: var(--color-04);
+}
+
+nav a:hover {
+    background-color: var(--hover);
+    color: var(--color-04);
+}
+
+nav a:active {
+    background-color: var(--active);
+}
+
+#current:active {
+    background-color: var(--active);
+}
+
+
+HTML========================================================================
+
+FOR MAIN PAGE:
+
+    <header>
+        <div class="main-header-top">
+            <a href="./index.html"><img id="main-logo" src="images/logo.svg" alt="Mobile Suite Logo"></a>
+            <div class="main-header-title">
+                <a href="index.html"><h1 id="title">Mobile Suite</h1><p id="sub-title">The Traveling Gallery</p></a>
+            </div>
+        </div>
+        <div class="main-nav">
+            <h2>Our Current Showcases</h2>
+            <nav>
+                <a href="galleries/gundam.html"><img src="images/gundam-1.jpg" alt="gundam gallery"><p>Gundam</p></a>
+                <a href="galleries/macross.html"><img src="images/macross-1.jpg" alt="macross gallery"><p>Macross</p></a>
+                <a href="galleries/powerdolls.html"><img src="images/power-dolls-1.jpg" alt="power dolls gallery"><p>Power Dolls</p></a>
+                <a href="galleries/transformers.html"><img src="images/tf-1.jpg" alt="transformers gallery"><p>Transformers</p></a>
+            </nav>    
+        </div>
+    </header>
+
+    <footer>
+        <h3>More About Us</h3>
+        <ul id="utilities">
+            <li><a href="../utitlities.html">Help</a></li>
+            <li><a href="../utitlities.html">Terms of Use</a></li>
+            <li><a href="../utitlities.html">Store</a></li>
+            <li><a href="../utitlities.html">Locator</a></li>
+            <li><a href="../utitlities.html">Privacy Policy</a></li>
+            <li><a href="../utitlities.html">Cookies Policy</a></li>
+            <li><a href="../utitlities.html">Privacy Rights</a></li>
+            <li><a href="../utitlities.html">Conditions of Sale</a></li>
+            <li><a href="../utitlities.html">Cookie Settings </a></li>
+        </ul>
+    </footer>
+
+FOR SUB PAGES:
+
+    <header id="gallery-header">
+        <div class="header-top">
+            <a href="../index.html"><img id="logo" src="../images/logo.svg" alt="Mobile Suite Logo"></a>
+            <div class="header-title">
+                <a href="../index.html"><h1 id="title">Mobile Suite</h1><p id="sub-title">The Traveling Gallery</p></a>
+            </div>
+        </div>
+        <div>
+            <h2>Our Current Showcases</h2>
+            <nav>
+                <a href="gundam.html" id="current"><img src="../images/gundam-1.jpg" alt="gundam gallery"><p>Gundam</p></a>
+                <a href="macross.html"><img src="../images/macross-1.jpg" alt="macross gallery"><p>Macross</p></a>
+                <a href="powerdolls.html"><img src="../images/power-dolls-1.jpg" alt="power dolls gallery"><p>Power Dolls</p></a>
+                <a href="transformers.html"><img src="../images/tf-1.jpg" alt="transformers gallery"><p>Transformers</p></a>
+            </nav>    
+        </div>
+    </header>
+

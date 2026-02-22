@@ -1,0 +1,384 @@
+:root {
+    --color-01: #233; /*primary*/
+    --color-02: #8cc; /*accent*/
+    --color-03: #fff; /*background*/
+    --color-04: #000; /*text color*/
+    --color-05: #8cc5;
+    --color-06: #ffc800; /*cancellation color*/
+
+      /* psuedo selectors for mouse behavior*/
+  --current: #ddd;
+  --link: #999;
+  --visited: #a8a;
+  --hover: #fd7;
+  --active: #ffa;
+
+    /* Spacing - build a scale using multiples */
+  --space-sm: 0.8rem;/* smallest gap */
+  --space-md: 1.3rem;/* comfortable default */
+  --space-lg: 2.1rem;/* section breaks */
+  --space-xl: 3.4rem;/* major separations */
+  --space-xxl: 5.5rem;/* i can't believe you've done this */
+  --space-borders: 0.2rem;
+
+  
+  --font1: "Lexend Exa";
+  --font2: "Open Sans";
+  --font3: "Caveat";
+  
+ } 
+
+ #current:hover {
+    background-color: var(--hover);
+}
+
+header a:link {
+    color: var(--color-03);
+    text-decoration: none;
+}
+
+header a:link h1{
+    text-decoration: underline;
+}
+
+nav a:link {
+    background-color: var(--link);
+    color: var(--color-04);
+}
+
+a:visited {
+    background-color: var(--visited);
+    color: var(--color-04);
+}
+
+nav a:hover {
+    background-color: var(--hover);
+    color: var(--color-04);
+}
+
+nav a:active {
+    background-color: var(--active);
+}
+
+#current:active {
+    background-color: var(--active);
+}
+
+
+
+/*End of reusable code======================================================================================================================*/
+
+
+
+
+
+
+
+
+.caveat-brush {
+  font-family: "Caveat", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+.open-sans-main {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+
+.lexend-exa-gunpla {
+  font-family: "Lexend Exa", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+html {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--color-03);
+    font-family: var(--font2);
+    font-size: var(--space-sm);
+}
+
+header {
+    font-family: var(--font1);
+    background-color: var(--color-01);
+    color: var(--color-03);
+    padding: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: var(--space-lg)
+}
+
+h1, h2 {
+    color:var(--color-03)
+}
+
+#sub-title {
+    color:var(--color-03)
+}
+
+header div > h2 + nav a {
+    width: calc(var(--space-xxl)*1.6*1.6)
+}
+
+header div > h2 + nav a img {
+    display: none;
+}
+
+#gallery-header {
+    font-family: var(--font1);
+    background-color: var(--color-01);
+    color: var(--color-03);
+    padding: var(--space-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    width: 60px;
+    position: relative;
+    top: -5px;
+    right: var(--space-sm)
+}
+
+#main-logo {
+    width: 260px;
+    position: relative;
+    top: -5px;
+    right: var(--space-sm)
+}
+
+h1 + p {
+    font-size: var(--space-md);
+    position: relative;
+    bottom: var(--space-md)
+}
+
+div:has(nav) {
+    background-color: var(--color-04);
+}
+
+div:has(nav) > h2 {
+    position: relative;
+    top: var(--space-lg)
+}
+
+.main-nav > h2 + nav a img {
+    display: block;
+    width: calc(var(--space-xxl)*1.6*1.6*1.6);
+}
+
+.main-nav > h2 + nav a  {
+    display: block;
+    width: calc(var(--space-xxl)*1.6*1.6*1.6);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:var(--space-md);
+    flex-wrap: wrap;
+    padding: var(--space-md) 0 var(--space-xl);
+}
+
+.gallery-nav a {
+    font-weight: 300;
+    text-decoration: none;
+    width: calc(var(--space-xxl)*2);
+    height: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+#about-us > article > p:first-of-type{
+    font-size: var(--space-lg);
+}
+
+.series-block {
+    font-size: var(--space-md);
+}
+
+.series-name h2 {
+    color: var(--color-04);
+}
+
+.series-name p {
+    position: relative;
+    bottom: var(--space-md)
+}
+
+.series-img {
+    margin: 0 auto;
+    width:100dvw;
+    max-width: 650px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: stretch;
+    width: 100%;
+}
+
+.series-pic {
+    width: 100%;
+}
+
+
+
+
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+section {
+    margin: var(--space-xxl) 0;
+}
+
+
+blockquote {
+    font-family: var(--font3);
+    font-weight: 800;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50dvw;
+    max-width: 500px;
+    text-align: left;
+    padding: var(--space-lg);
+    border: 1px solid var(--color-02);
+    font-size: var(--space-lg)
+}
+
+blockquote cite {
+    font-family: var(--font1);
+    font-style: normal;
+    font-size: var(--space-sm);
+}
+
+caption, h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font1);
+    font-weight: 900;
+}
+
+table {
+    border: 1px solid var(--color-04);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+th {
+    background-color: var(--color-02);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-05);
+}
+
+.cancelled {
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+  position: relative;
+}
+
+.cancelled td:last-child {
+  content: url('../images/cancelled.svg') / "cancelled";
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+table {
+    position: relative;
+}
+
+.show-features h3 {
+    position: relative;
+    top:var(--space-md)
+}
+
+.show-features ul, .blurb ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: var(--space-md);
+}
+
+
+.show-features li:nth-child(even) {
+    background-color: var(--color-05);
+}
+
+.excerpt {
+    background-color: var(--color-05);
+}
+
+#current {
+    background-color: var(--current);
+    border: var(--color-02) 2px solid;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    font-family: var(--font1);
+    background-color: var(--color-01);
+    color: var(--color-03);
+    padding: var(--space-md);
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+    gap: var(--space-sm)
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer #utilities a {
+    color: var(--color-03);
+}
+
+#utilities a:link {
+    color: var(--color-03);
+}
